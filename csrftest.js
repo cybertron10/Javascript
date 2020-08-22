@@ -43,9 +43,9 @@ if (req.readyState == 4 && req3.status == 200 )
   }
  }; 
 
-req3.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
-req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-req3.send();
+req.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
+req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+req.send();
 /*
 req5.onreadystatechange = function()
 {
