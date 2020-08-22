@@ -6,7 +6,8 @@ req.onreadystatechange = function()
 {
 if (req.readyState == 4 && req.status == 200 )
   {
-  var myStringArray = $('tbody tr[id]').map(function() {
+  var htmlPage = req.responseXML;
+  var myStringArray = htmlPage.$('tbody tr[id]').map(function() {
   return this.id;
       });
   var arrayLength = myStringArray.length;
@@ -19,6 +20,7 @@ if (req.readyState == 4 && req.status == 200 )
 };
 
 req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp");
+req.responseType = "document";
 req.send();
 
 </script>
