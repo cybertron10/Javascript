@@ -27,6 +27,7 @@ req.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/
 req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req.send();
 */
+for (i=0; i < 20; i++){
 req.onreadystatechange = function()
 {
 if (req.readyState == 4 && req.status == 200 )
@@ -44,6 +45,7 @@ if (req.readyState == 4 && req.status == 200 )
 
 req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
 req.send();
+}
 /*
 req5.onreadystatechange = function()
 {
