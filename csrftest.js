@@ -35,7 +35,7 @@ if (req.readyState == 4 && req.status == 200 )
    var reponse_obj = JSON.parse(req.responseText);
    for (i = 0; i < reponse_obj.rows.length; i++) {
    console.log(reponse_obj.rows[i].id);
-      req2.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[i].id+"&nact=1, true);
+      req2.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[i].id+"&nact=1", true);
       req2.send();
        }
    }
