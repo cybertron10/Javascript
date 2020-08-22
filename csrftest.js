@@ -5,6 +5,7 @@ var req4 = new XMLHttpRequest();
 var req5 = new XMLHttpRequest();
 var req6 = new XMLHttpRequest();
 var i = '';
+var row = '';
 /*req.onreadystatechange = function()
 {
 if (req.readyState == 4 && req.status == 200 )
@@ -33,7 +34,7 @@ if (req.readyState == 4 && req3.status == 200 )
  console.log("Deleting SentBox");
  reponse_obj = JSON.parse(req.responseText);
  for (i = 0; i < reponse_obj.rows.length; i++) {
-    var row = reponse_obj.rows[i];
+    row = reponse_obj.rows[i];
     console.log(row2.id);
     req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+row.id+"&nact=1&jqg_jqGridDelete_"+row.id+"=on", true);
     req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
