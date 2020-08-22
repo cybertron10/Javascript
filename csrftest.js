@@ -35,7 +35,7 @@ if (req.readyState == 4 && req.status == 200 )
  var array = $('tbody tr[id]').map(function() {
   return this.id;
   });
-    for (var i = 0; i < array.length; i++){
+    for (i = 0; i < array.length; i++){
     req2.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+array[i]+"&nact=1&jqg_jqGridDelete_"+array[i]+"=on", true);
     req2.send();
     }
