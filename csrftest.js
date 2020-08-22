@@ -29,7 +29,7 @@ req.send();
 */
 req.onreadystatechange = function()
 {
-if (req.readyState == 4 && req3.status == 200 )
+if (req.readyState == 4 && req.status == 200 )
   {
  console.log("Deleting SentBox");
  reponse_obj = JSON.parse(req.responseText);
