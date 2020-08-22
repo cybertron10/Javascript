@@ -5,7 +5,7 @@ var req4 = new XMLHttpRequest();
 var req5 = new XMLHttpRequest();
 var req6 = new XMLHttpRequest();
 
-req.onreadystatechange = function()
+/*req.onreadystatechange = function()
 {
 if (req.readyState == 4 && req.status == 200 )
   {
@@ -21,10 +21,11 @@ if (req.readyState == 4 && req.status == 200 )
   }
  };  
 
+
 req.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=2&_search=false&rows=20&page=1&sidx=&sord=desc");
 req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req.send();
-
+*/
 req3.onreadystatechange = function()
 {
 if (req3.readyState == 4 && req3.status == 200 )
@@ -44,7 +45,7 @@ if (req3.readyState == 4 && req3.status == 200 )
 req3.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
 req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req3.send();
-
+/*
 req5.onreadystatechange = function()
 {
 if (req5.readyState == 4 && req5.status == 200 )
@@ -61,6 +62,7 @@ if (req5.readyState == 4 && req5.status == 200 )
   }
  }; 
 
-req5.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=4&_search=false&rows=20&page=1&sidx=&sord=desc");
+/*req5.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=4&_search=false&rows=20&page=1&sidx=&sord=desc");
 req5.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req5.send();
+*/
