@@ -7,7 +7,7 @@ req.onreadystatechange = function()
 if (req.readyState == 4 && req.status == 200 )
   {
   var htmlPage = req.responseXML;
-  console.log(htmlpage);
+  console.log(htmlPage);
   var myStringArray = htmlPage.$('tbody tr[id]').map(function() {
   return this.id;
       });
