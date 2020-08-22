@@ -32,10 +32,10 @@ req.onreadystatechange = function()
 if (req.readyState == 4 && req.status == 200 )
    {
    console.log("Deleting SentBox");
-   reponse_obj = JSON.parse(req.responseText);
+   var reponse_obj = JSON.parse(req.responseText);
    for (i = 0; i < reponse_obj.rows.length; i++) {
    console.log(reponse_obj.rows[i].id);
-      req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[i].id+"&nact=1", true);
+      req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[i].id", true);
       req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       req2.send();
        }
