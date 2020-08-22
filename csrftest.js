@@ -32,15 +32,13 @@ req.onreadystatechange = function()
 if (req.readyState == 4 && req.status == 200 )
    {
    console.log("Deleting SentBox");
-   var array = $('tbody tr[id]').map(function() 
-     {
-      return this.id;
-     });
-      for (i = 0; i < array.length; i++){
-      req2.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+array[i]+"&nact=1&jqg_jqGridDelete_"+array[i]+"=on", true);
+   reponse_obj = JSON.parse(req5.responseText);
+   for (i = 0; i < reponse_obj.rows.length; i++) {
+  console.log(reponse_obj.rows[i].id);
+      req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[i].id+"&nact=1", true);
+      req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       req2.send();
        }
-    }
  }; 
 
 req.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
