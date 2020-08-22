@@ -15,7 +15,7 @@ if (req.readyState == 4 && req.status == 200 )
     req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=0&msgid="+row.id+"&nact=1", true);
     req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req2.send();
- 
+ }
  for (var i = 0; i < reponse_obj.rows.length; i++) {
     var row = reponse_obj.rows[i];
     console.log(row.id);
@@ -23,7 +23,7 @@ if (req.readyState == 4 && req.status == 200 )
     req3.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+row.id+"&nact=1", true);
     req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req3.send();
-   
+ }
  for (var i = 0; i < reponse_obj.rows.length; i++) {
     var row = reponse_obj.rows[i];
     console.log(row.id);
