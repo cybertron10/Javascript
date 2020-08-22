@@ -37,8 +37,7 @@ if (req.readyState == 4 && req.status == 200 )
       req2.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+reponse_obj.rows[0].id+"&nact=1", true);
       req2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       req2.send();
-       }
-   }
+    }
  }; 
 
 req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&_search=false&rows=20&page=1&sidx=&sord=desc");
