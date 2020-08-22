@@ -14,7 +14,7 @@ if (req.readyState == 4 && req.status == 200 )
  for (var i = 0; i < reponse_obj.rows.length; i++) {
     var row1 = reponse_obj.rows[i];
     console.log(row1.id);
-    req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=0&msgid="+row1.id+"&nact=1&jqg_jqGridDelete_"+row1.id+"=on, true);
+    req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=0&msgid="+row1.id+"&nact=1&jqg_jqGridDelete_"+row1.id+"=on", true);
     req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req2.send();
    }
