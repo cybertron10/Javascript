@@ -16,5 +16,5 @@ if (req.readyState == 4 && req.status == 200 )
 };
 
 req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messageJson.jsp?uid=9135&type=0&tab=3&rows=20&page=1");
-req.responseType = "document";
+
 req.send();
