@@ -25,7 +25,7 @@ req.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/
 req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req.send();
 
-req3.onreadystatechange = function2()
+req3.onreadystatechange = function()
 {
 if (req3.readyState == 4 && req3.status == 200 )
   {
@@ -45,7 +45,7 @@ req3.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp
 req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 req3.send();
 
-req5.onreadystatechange = function3()
+req5.onreadystatechange = function()
 {
 if (req5.readyState == 4 && req5.status == 200 )
   {
