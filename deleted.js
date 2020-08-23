@@ -1,9 +1,9 @@
    var req = new XMLHttpRequest();
-   var req2 = new XMLHttpRequest();
+   var req3 = new XMLHttpRequest();
 
-   req2.onreadystatechange = function()
+   req3.onreadystatechange = function()
    {
-      alert("All Messages Deleted"); 
+      alert("Congrats All Messages Deleted"); 
    }
    req.onreadystatechange = function()
    {
