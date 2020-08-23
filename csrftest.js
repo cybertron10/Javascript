@@ -1,5 +1,6 @@
    var req = new XMLHttpRequest();
    var req3 = new XMLHttpRequest();
+   var req2 = new XMLHttpRequest();
 
    req3.onreadystatechange = function()
    {
