@@ -1,5 +1,10 @@
    var req = new XMLHttpRequest();
+   var req2 = new XMLHttpRequest();
 
+   req2.onreadystatechange = function()
+   {
+      alert("All Messages Deleted"); 
+   }
    req.onreadystatechange = function()
    {
      if (req.readyState == 4 && req.status == 200 )
@@ -13,7 +18,6 @@
      req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
      req3.send();
      }
-      alert("All Messages Deleted");
    }
 };
 
