@@ -8,18 +8,18 @@
      for (var i = 0; i < reponse_obj.rows.length; i++) {
      var row = reponse_obj.rows[i];
      console.log(row.id);
-     var req2 = new XMLHttpRequest();
+     /*var req2 = new XMLHttpRequest();
      req2.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=0&msgid="+row.id+"&nact=1", true);
      req2.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-     req2.send();
+     req2.send();*/
      var req3 = new XMLHttpRequest();
      req3.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=1&msgid="+row.id+"&nact=1", true);
      req3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
      req3.send();
-     var req4 = new XMLHttpRequest();
+     /*var req4 = new XMLHttpRequest();
      req4.open("POST", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/messages.jsp?box=2&msgid="+row.id+"&nact=1", true);
      req4.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-     req4.send();
+     req4.send();*/
      }
    }
 };
