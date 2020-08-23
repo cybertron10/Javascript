@@ -1,4 +1,5 @@
    var req = new XMLHttpRequest();
+   var req2 = new XMLHttpRequest();
 
   req2.onreadystatechange = function () {
    if (req2.readyState == 4 && req2.status == 200 )
