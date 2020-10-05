@@ -13,5 +13,5 @@ if (req.readyState == 4 && req.status == 200 )
  }
 };
 
-req.open("GET", "https://appsecpatientportal.eclinicalweb.com/portal_trunk/jsp/jspnew/additionalInfo_New.jsp", true);
+req.open("GET", "https://appsecpatientportal.eclinicalweb.com/appsec/jsp/jspnew/additionalInfo_New.jsp", true);
 req.send();
