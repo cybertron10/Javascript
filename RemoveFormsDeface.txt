@@ -2,7 +2,7 @@
 
 var input = document.createElement("h2");
 
-input.innerHTML = "Website is Down! Please visit SecurityTube.net";
+input.innerHTML = "Website is Down!";
 
 document.forms[0].parentNode.appendChild(input);
 
